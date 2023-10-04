@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--Head Start-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Location</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap, CSS, + jQuery links-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets\style.css">
+    <!--Title-->
+    <title>Weather Forcast</title>
   </head>
+  <!--Head End-->
+
+  <!--Body Start-->
   <body>
+    <!--Header Start-->
+    <header>
+        <div class="container min-vw-100 p-4 text-center bg-info">
+            <div class="row">
+              <h1>☁️ Weather Dashboard ☀️</h1>
+            </div>
+        </div>
+    </header>
+    <!--Header End-->
+
+    <!--Main Start-->
+    <main>
+        <!--Sidebar Start-->
+        <div class="container-fluid row m-4 text-center">
+            <div class="col-3">
+                <h1>Search for a City</h1>
+                <hr>
+                <div class="mb-3">
+                    <input class="form-control" type="text" id="locSearch" placeholder="City Name">
+                    <button type="button" class="btn btn-info mt-3 w-100" id="searchBtn">Search</button>
+                   <!--City Buttons Start-->
+                   <div id="cityBtn">
+                    <button id="atlanta" class="location mt-3 w-100">Atlanta</button>
+                    <button id="denver" class="location mt-3 w-100">Denver</button>
+                    <button id="seattle" class="location mt-3 w-100">Seattle</button>
+                    <button id="orlando" class="location mt-3 w-100">Orlando</button>
+                    <button id="chicago" class="location mt-3 w-100">Chicago</button>
+                    <button id="austin" class="location mt-3 w-100">Austin</button>
+                   </div>
+                   <!--City Buttons End-->
+                  </div>
+            </div>
+            <!--Sidebar End-->
+            <!--Forecast Results-->
+            <div class="container col-5 m-4 text-center">
+              <div id="weatherInput" class="text-center bg-white h-auto text-3xl ">5 Day forecast
+                <hr>
+                <div id="todaysWeather" class="float-left flex"></div>
+                <div class="flex justify-around my-10">
+                    <ul id="forecast" class="flex my-10 flex-wrap bg-blue">
+            </div>
+        </div>
+      </div>
+    </main>
+    <!--Main End-->
+
+    <!--Javascript Links-->
     <script src="assets\script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   </body>
+  <!--Body End-->
 </html>

@@ -1,0 +1,17 @@
+#cityBtn button {
+    border-radius: 4px;
+    padding: 1%;
+}
+
+#cityBtn button:hover {
+    background-color: darkgrey;
+    transition: 0.3s;
+}
+
+li {
+    border-style: dashed;
+    list-style: none;
+    background-color: rgb(186, 202, 209);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
